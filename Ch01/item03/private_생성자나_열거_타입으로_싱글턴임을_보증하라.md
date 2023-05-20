@@ -42,12 +42,13 @@ public class Elvis {
 -   정적 팩터리 메서드 방식은 위와 마찬가지로 생성자를 private으로 만들지만
 -   인스턴스를 갖는 static final 필드를 private으로 두고 정적 팩터리 메서드에서 이를 반환
 
-**\*원문**: All calls to Elvis.getInstance return the same object reference, and no other Elvis instance will ever be created (with the same caveat mentioned earlier).\*
-**\*번역** : Elvis.getInstance 호출마다 같은 객체의 참조를 반환하고, 이와 같은 Elvis 인스턴스가 절대로 만들어지지 않는다 (이전에 언급한 예외를 제외하고).\*
+***\*원문**: All calls to Elvis.getInstance return the same object reference, and no other Elvis instance will ever be created (with the same caveat mentioned earlier)*
+
+***\*번역** : Elvis.getInstance 호출마다 같은 객체의 참조를 반환하고, 이와 같은 Elvis 인스턴스가 절대로 만들어지지 않는다(이전에 언급한 예외를 제외하고).*
 
 > "with the same caveat mentioned earlier" 부분은 해당 구문이 특정한 예외 사항이 적용되는 경우를 가정한다는 의미
 
-**\*번역본**: (역시 리플렉션을 통한 예외는 똑같이 적용된다.)\*
+***\*번역본**: (역시 \*리플렉션을 통한 예외는 똑같이 적용된다.)*
 
 \*리플렉션(reflection)은 Java와 같은 몇몇 프로그래밍 언어에서 런타임(runtime)에 클래스와 객체의 메타데이터에 접근하고 조작할 수 있는 기능을 제공하는 개념
 
