@@ -2,8 +2,6 @@
 
 이 책의 초판 아이템 50에서는 wait와 notify를 올바르게 사용하는 방법을 안내함
 
-> 책에는 없지만...
-
 -   자바에서 wait()와 notify(), notifyAll() 메서드들은 Object 클래스의 일부로 모든 자바 객체에 존재
 -   이들은 공유된 자원에 대한 동시 접근을 조절하는데 사용되는 중요한 도구들
 -   이런 메서드들은 주로 동기화 블록(즉, synchronized 키워드를 사용하여 정의된 블록) 내에서 사용되며, 특히 여러 스레드가 동일한 객체에 동시 접근을 시도할 때 그들 사이의 조정을 담당
@@ -129,7 +127,7 @@ java.util.concurrent 패키지가 제공하는 고수준 동시성 유틸리티�
     -   Executors.newFixedThreadPool(n)를 호출하여 고정된 크기의 스레드 풀을 생성하면, 한 번에 n 개의 작업만 실행됨
 
 ```java
-       ExecutorService executorService = Executors.newFixedThreadPool(5);
+ExecutorService executorService = Executors.newFixedThreadPool(5);
 
 for (int i = 0; i < 10; i++) {
    final int taskId = i;
