@@ -150,7 +150,7 @@ public class TreeMap<K,V> extends AbstractMap<K,V> implements NavigableMap<K,V>,
         return (es != null) ? es : (entrySet = new EntrySet());
     }
 ```
-위의 코드에서 비정적 멤버 클래스 EntrySet의 객체를 생성한다. 암묵적으로 바깥 클래스와 멤버 클래스간의 연결되는 관계가 비정적 멤법 클래스의 인스턴스 안에 만들어지고,  
+위의 코드에서 비정적 멤버 클래스 EntrySet의 객체를 생성한다. 암묵적으로 바깥 클래스와 멤버 클래스간의 연결되는 관계가 비정적 멤버 클래스의 인스턴스 안에 만들어지고,  
 Map 객체가 사용하는 곳이 없더라도 이 관계때문에 GC 가 일어나지 못한다.
 
 <br>
